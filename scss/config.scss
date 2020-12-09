@@ -1,0 +1,7 @@
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return hsl(219, 29%, 14%);
+  } @else {
+    @return hsl(0, 0%, 100%);
+  }
+}
